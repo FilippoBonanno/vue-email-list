@@ -10,7 +10,7 @@
                ],
 
                indirizzo: `https://flynn.boolean.careers/exercises/api/random/mail`,
-    
+               userInput: 0,
             }
         },
     
@@ -33,7 +33,11 @@
 
             stampa() {
                 console.log("Dentro L'email c'è:", this.email);
-                this.getEmail();
+                for (let i = 0; i < this.userInput; i++) {
+                    this.getEmail();
+                    
+                };
+                
             }
 
         },
